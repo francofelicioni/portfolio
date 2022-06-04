@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!--BOX ICONS-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Franco Felicioni - Portfolio</title>
+</head>
+
+<body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Franco Felicioni</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#sobreMi" class="nav__link">Sobre mí</a></li>
+                    <li class="nav__item"><a href="#experiencia" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <main class="l-main">
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">¡Hola!<br>Soy <span class="home__title-color">Franco,</span><br>Jr. Frontend
+                    Dev</h1>
+            </div>
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/francofelicioni/" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/francofelicioni" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                <a href=mailto:francofelicioni@gmail.com" class="home__social-icon"><i class='bx bx-envelope'></i></a>
+            </div>
+            <div class="home__img">
+                <img src="ff-portfolio.png" alt="">
+            </div>
+        </section>
+
+        <!--sobre mi-->
+        <section class="sobreMi section " id="sobreMi">
+            <h2 class="section-title">Un poco sobre mí</h2>
+
+            <div class="sobreMi__container bd-grid">
+                <div class="sobreMi__img">
+                    <img src="ff2.jpg" alt="">
+                </div>
+                <div class="sobreMi-presentacion">
+                    <h2 class="sobreMi__subtitle">Me dicen Fran,</h2>
+                    <p class="sobreMi__text">soy una persona <span class="home__title-color">en constante aprendizaje y con una gran
+                    motivación</span>, apasionada por el <b>marketing digital</b> y la <b>tecnología.</b></p>
+                    <p class="sobreMi__text">Me gusta aplicar  <span class="home__title-color">mis conocimientos en marketing, </span> al momento de programar.</p>
+                    <p class="sobreMi__text">Hago trabajos como freelance y me encuentro en la busqueda de un puesto como <b> Frontend Developer</b> para aplicar todo mi conocimiento y seguir formándome como profesional.</p>
+                    <!-- <p  class="sobreMi__text">En mis tiempos libres practico <b>kitesurf</b>, un deporte que me apasiona</p> -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="experiencia section" id="experiencia">
+            <h2 class="section-title">Portfolio</h2>
+
+            <div class="experiencia__container bd-grid">
+                <div class="experiencia__img">
+                    <a href="https://francofelicioni.github.io/thekiteplace/" target="_blank"><img src="1.png"
+                            alt="Proyecto ReactJs en proceso"></a>
+                </div>
+                <div>
+                    <h2 class="sobreMi__subtitle">Proyecto React Js</h2>
+                    <p class="sobreMi__text"><b>The Kite Place, </b>e-commerce donde incluyo a mi gran pasión, el kitesurf,
+                    desarrollado en ReactJs, utilizando: <span class="home__title-color"> react router dom, context,
+                        conditional rendering, promesas, Firestore database
+                        de Firebase como base de datos vía Api, material UI.
+                    </span><a class="a-repositorio" href="https://github.com/francofelicioni/thekiteplace.git">Repositorio en GitHub</a>
+                    </p>
+
+                </div>
+                <div class="experiencia__img">
+                    <a href="https://francofelicioni.github.io/adidasStore/" target="_blank"><img src='2.png'
+                            alt="Proyecto Adidas Store"></a>
+                </div>
+                <div>
+                    <h2 class="sobreMi__subtitle">Proyecto E-commerce JavaScript</h2>
+                    <p class="sobreMi__text"><b>Adidas Store, </b>e-commerce hecho con JavaScript, donde replico un e-commerce de la marca adidas originals.<span class="home__title-color"> HTML, CSS,
+                            y JavaScript. Promesas asincronas, JSON, API, Local Storage. <a class="a-repositorio" href="https://github.com/francofelicioni/adidasStore.git">Repositorio en GitHub</a>
+                        </span>
+                    </p>
+                </div>
+                <div class="experiencia__img">
+                    <a href="https://francofelicioni.github.io/pablorinaldi/" target="_blank"><img src="3.png" alt="Diseño del sitio web desarrollado por Franco Felicioni"></a>
+                </div>
+                <div>
+                    <h2 class="sobreMi__subtitle">Pablo Rinaldi Fotografía</h2>
+                    <p class="sobreMi__text"><b>Maquetado y desarrollo de sitio web responsivo, </b> para el fotógrafo Pablo Rinaldi.
+                        <span class="home__title-color"> HTML,
+                            CSS, SASS, JAVASCRIPT y Bootstrap</span>. Para el diseño me inspiré en una línea minimalista, utilizando la libreria Masonry para la galeria de imágenes. <a class="a-repositorio" href="https://github.com/francofelicioni/pablorinaldi.git">Repositorio en GitHub</a>
+                    </p>
+                </div>
+                <div class="experiencia__img">
+                    <a href="https://francofelicioni.github.io/eas/" target="_blank"><img src="4.png" alt="Diseño del sitio web desarrollado por Franco Felicioni"></a>
+                </div>
+                <div>
+                    <h2 class="sobreMi__subtitle">Proyecto Desarrollo Web</h2>
+                    <p class="sobreMi__text"><b>Sitio web responsive.</b> Realizado para la abogada Martina Ferrari. 
+                        <span class="home__title-color">HTML,
+                            CSS, SASS y Bootstrap</span>. <a class="a-repositorio" href="https://github.com/francofelicioni/eas.git">Repositorio en GitHub</a>
+                    </p>
+                </div>
+        </section>
+
+        <!--contacto-->
+        <section class="contact section contact__container bd-grid" id="contact">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-info">
+                <a  href=mailto:fran.felicioni@gmail.com>fran.felicioni@gmail.com</a>
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/francofelicioni/"  target="_blank" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/francofelicioni" class="home__social-icon"  target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- <footer class="footer">
+            
+        </footer> -->
+
+        <!--scroll reveal-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--mi JS-->
+        <script src="main.js"></script>
+</body>
+
+</html>
