@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 /*===== VARIABLES CSS =====*/
 :root {
-  --header-height: 3rem;
+  --header-height: var(--mb-6);
   --font-semi: 600;
 }
 
@@ -14,15 +14,15 @@
 /*===== Fuente y tipografia =====*/
 :root {
   --body-font: "Poppins", sans-serif;
-  --big-font-size: 2rem;
+  --big-font-size: var(--mb-4);
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
 }
 @media screen and (min-width: 768px) {
   :root {
     --big-font-size: 3.5rem;
-    --h2-font-size: 2rem;
-    --normal-font-size: 1rem;
+    --h2-font-size: var(--mb-4);
+    --normal-font-size: var(--mb-2);
   }
 }
 
@@ -95,12 +95,12 @@ img {
   left: 0;
   right: 0;
   margin: auto;
-  top: 2rem;
+  top: var(--mb-4);
   background-color: var(--first-color);
 }
 .section {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-top: var(--mb-6);
+  padding-bottom: var(--mb-4);
 }
 
 /* LAYOUT */
@@ -108,8 +108,8 @@ img {
   max-width: 1024px;
   display: grid;
   grid-template-columns: 100%;
-  grid-column-gap: 2rem;
-  width: calc(100% - 2rem);
+  grid-column-gap: var(--mb-4);
+  width: calc(100% - var(--mb-4));
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
@@ -138,7 +138,7 @@ img {
     right: -100%;
     width: 80%;
     height: 100%;
-    padding: 2rem;
+    padding: var(--mb-4);
     background-color: var(--second-color);
     transition: 0.5s;
   }
@@ -159,7 +159,7 @@ img {
   width: 100%;
   height: 0.18rem;
   left: 0;
-  top: 2rem;
+  top: var(--mb-4);
   background-color: var(--first-color);
 }
 .nav__logo {
@@ -174,7 +174,7 @@ img {
 }
 .nav__toggle {
   color: var(--second-color);
-  font-size: 1.5rem;
+  font-size: var(--mb-3);
   cursor: pointer;
 }
 
@@ -185,7 +185,7 @@ img {
   width: 100%;
   height: 0.18rem;
   left: 0;
-  top: 2rem;
+  top: var(--mb-4);
   background-color: var(--first-color);
 }
 
@@ -196,8 +196,8 @@ img {
 
 /*===== HOME =====*/
 .home {
-  height: calc(100vh - 3rem);
-  row-gap: 1rem;
+  height: calc(100vh - var(--mb-6));
+  row-gap: var(--mb-2);
   position: relative;
 }
 .home__data {
@@ -217,7 +217,7 @@ img {
 .home__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
+  font-size: var(--mb-3);
   color: var(--second-color);
 }
 .home__social-icon:hover {
@@ -233,7 +233,7 @@ img {
 .a-repositorio {
   display: flex;
   gap: .5rem;
-  padding-top: 1rem;
+  padding-top: var(--mb-2);
   color: #161B22;
   font-weight: 900;
   text-decoration: none;
@@ -241,7 +241,7 @@ img {
 
 /* ===== ABOUT =====*/
 .sobreMi__container {
-  row-gap: 2rem;
+  row-gap: var(--mb-4);
   text-align: center;
 }
 .sobreMi__subtitle {
@@ -255,7 +255,7 @@ img {
 }
 .sobreMi__img img {
   width: 200px;
-  border-radius: 0.5rem;
+  border-radius: var(--mb-1);
 }
 
 .sobreMi-presentacion p {
@@ -264,11 +264,11 @@ img {
 
 /* ===== WORK =====*/
 .experiencia__container {
-  row-gap: 2rem;
+  row-gap: var(--mb-4);
 }
 .experiencia__img {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-  border-radius: 0.5rem;
+  border-radius: var(--mb-1);
   overflow: hidden;
 }
 .experiencia__img img {
@@ -285,10 +285,10 @@ img {
   color: var(--second-color);
   text-align: center;
   font-weight: var(--font-semi);
-  padding: 2rem 0;
+  padding: var(--mb-4) 0;
 }
 .footer__title {
-  font-size: 2rem;
+  font-size: var(--mb-4);
   color: var(--second-color);
   margin-bottom: var(--mb-4);
 }
@@ -299,12 +299,12 @@ img {
   align-items: center;
 }
 .footer__icon {
-  font-size: 1.5rem;
+  font-size: var(--mb-3);
   color: #fff;
   margin: 0 var(--mb-2);
 }
 .footer__icon a {
-  padding: 0 1rem;
+  padding: 0 var(--mb-2);
 }
 
 .contact-info {
@@ -326,17 +326,17 @@ img {
   }
   .section {
     padding-top: 4rem;
-    padding-bottom: 3rem;
+    padding-bottom: var(--mb-6);
   }
   .section-title {
     margin-bottom: var(--mb-6);
   }
   .section-title::after {
     width: 80px;
-    top: 3rem;
+    top: var(--mb-6);
   }
   .nav {
-    height: calc(var(--header-height) + 1rem);
+    height: calc(var(--header-height) + var(--mb-2));
   }
   .nav__list {
     display: flex;
@@ -361,7 +361,7 @@ img {
   }
   .home__social {
     padding-top: 0;
-    padding-bottom: 2.5rem;
+    padding-bottom: var(--mb-5);
     flex-direction: row;
     align-self: flex-end;
   }
@@ -379,7 +379,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: initial;
-    line-height: 2rem;
+    line-height: var(--mb-4);
   }
   .sobreMi__img img {
     width: 300px;
@@ -387,7 +387,7 @@ img {
   .experiencia__container {
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(2, 2fr);
-    column-gap: 2rem;
+    column-gap: var(--mb-4);
   }
 
   @media screen and (min-width: 1024px) {
@@ -412,8 +412,8 @@ img {
   width: 100%;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: 0.5rem;
+  padding: var(--mb-2);
+  border-radius: var(--mb-1);
   border: 1.5px solid var(--second-color);
   outline: none;
   margin-bottom: var(--mb-4);
