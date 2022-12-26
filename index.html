@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/favicon.ico" href="./assets/favicon.ico" />
     <link
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
@@ -16,7 +17,11 @@
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
-          <a href="https://francofelicioni.github.io/portfolio/" class="nav__logo home__title-color">Franco Felicioni</a>
+          <a
+            href="https://francofelicioni.github.io/portfolio/"
+            class="nav__logo home__title-color"
+            >Franco Felicioni</a
+          >
         </div>
 
         <div class="nav__menu" id="nav-menu">
@@ -26,6 +31,9 @@
             </li>
             <li class="nav__item">
               <a href="#experiencia" class="nav__link">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#cv" class="nav__link">Mi CV</a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">Contacto</a>
@@ -60,6 +68,10 @@
           <a href="mailto:fran.felicioni@gmail.com" class="home__social-icon"
             ><i class="bx bx-envelope"></i
           ></a>
+          <button class="home__social-icon download-cv">
+            <i class="bx bxs-download"></i>
+            <p class="download-cv-p">Descargar CV</p>
+          </button>
         </div>
       </section>
 
@@ -90,7 +102,6 @@
               <b> Full Stack Developer</b>, donde dia a dia sigo formándome como
               profesional.
             </p>
-            <!-- <p  class="sobreMi__text">En mis tiempos libres practico <b>kitesurf</b>, un deporte que me apasiona</p> -->
           </div>
         </div>
       </section>
@@ -111,10 +122,12 @@
           <div>
             <h2 class="sobreMi__subtitle">Proyecto React Js</h2>
             <p class="sobreMi__text">
-              <b>Hotel Miranda Dashboard, </b>se trata de un dashboard para gestionar la cadena hotelera Miranda.
+              <b>Hotel Miranda Dashboard, </b>se trata de un dashboard para
+              gestionar la cadena hotelera Miranda.
 
               <span class="home__title-color">
-                Desarrollada con React, React Router Dom, Redux Toolkit, useReducer & Context. Además de la implementación de D3.
+                Desarrollada con React, React Router Dom, Redux Toolkit,
+                useReducer & Context. Además de la implementación de D3.
               </span>
             </p>
             <a
@@ -338,6 +351,16 @@
               repositorio</a
             >
           </div>
+        </div>
+      </section>
+
+      <!-- Descargar CV -->
+      <section class="contact section contact__container bd-grid" id="cv">
+        <h2 class="section-title">Descargar CV</h2>
+        <div class="contact-info">
+          <button class="home__social-icon download-cv-footer">
+            <p class="download-cv-p-footer">Haz click aquí <i class="bx bxs-download"></i>  </p> 
+          </button>
         </div>
       </section>
 
