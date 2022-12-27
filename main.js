@@ -30,7 +30,7 @@ const sr = ScrollReveal({
   origin: "top",
   distance: "80px",
   duration: 2000,
-  reset: true,
+  reset: false,
 });
 
 /*SCROLL HOME*/
@@ -55,7 +55,6 @@ let downloadBtn = document.querySelector('.download-cv')
 let downloadBtnFooter = document.querySelector('.download-cv-footer')
 
 downloadBtn.addEventListener("click", () => {
-    console.log('entra')
     const downloadInstance = document.createElement('a');
     downloadInstance.href = "./assets/francoFelicioniCV.pdf";
     downloadInstance.target = '_blank';
@@ -67,7 +66,6 @@ downloadBtn.addEventListener("click", () => {
 });
 
 downloadBtnFooter.addEventListener("click", () => {
-    console.log('entra')
     const downloadInstance = document.createElement('a');
     downloadInstance.href = "./assets/francoFelicioniCV.pdf";
     downloadInstance.target = '_blank';
